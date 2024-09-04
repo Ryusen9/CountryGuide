@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM PROJECT</title>
+  </head>
+  <body class="font-poppins">
+    <div class="container w-[90%] lg:w-[45%] mx-auto py-7 px-4 bg-rose-100 rounded-xl border border-rose-500 shadow-xl my-3 flex flex-col justify-center items-center">
+      <div class="searchContainer flex justify-center items-center mb-7">
+        <label for="countrySearch" class="mr-3 font-medium">Country :</label>
+        <input type="text" placeholder="Enter Country Name" class="border-2 py-2 px-3 rounded-l-lg focus:outline-none active:outline-none border-rose-400" id="countrySearch">
+        <button class="py-2 px-3 bg-rose-400 border-2 border-rose-400 rounded-r-lg text-white" id="searchBtn">Search</button>
+      </div>
+      <div class="result text-left w-full flex flex-col gap-5">
+        <div class="countryFlag"><img src=""></div>
+        <p class="font-semibold text-lg"><i class="fa-regular fa-earth-oceania"></i> Country Name : <span id="countryName" class="font-normal"></span></p>
+        <p class="font-semibold text-lg"><i class="fa-thin fa-earth-americas"></i> Region : <span id="regionName" class="font-normal"></span></p>
+        <p class="font-semibold text-lg"><i class="fa-solid fa-person-arrow-up-from-line"></i> population : <span id="population" class="font-normal"></span></p>
+        <p class="font-semibold text-lg"><i class="fa-duotone fa-solid fa-circle-euro"></i> Currency : <span id="currency" class="font-normal"></span></p>
+        <p class="font-semibold text-lg"><i class="fa-duotone fa-solid fa-language"></i> Language : <span id="language" class="font-normal"></span></p>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
